@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context=".View.HuyPhongActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:text="Chính sách hủy phòng"
+            android:textColor="@color/colorXanhDen"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CHÍNH SÁCH HỦY PHÒNG"
+                android:textColor="@color/colorXanhDen1"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Chính sách hủy phòng của TripleT áp dụng theo 3 mốc thời gian như sau:"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hp1"
+                android:textColor="@color/colorblack" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hp2"
+                android:textColor="@color/colorblack" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hp3"
+                android:textColor="@color/colorblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sơ đồ:"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="355dp"
+                android:layout_height="254dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sodohp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnTiepTucDPCSHP"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiếp tục đặt phòng"
+                    android:textColor="@color/colorXanhDen"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_button"/>
+                <Button
+                    android:id="@+id/btnVeTTCSHP"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Về trang chủ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorXanhDen"
+                    android:textAllCaps="false"
+                    android:background="@drawable/custom_button_tracuu"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

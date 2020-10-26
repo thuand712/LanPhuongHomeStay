@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo giá phòng"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên giá thấp"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên giá cao"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo đánh giá"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên đánh giá cao"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo lượt đặt"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên nhiều lượt đặt"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo tên"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Theo bảng chữ cái (từ A - Z"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ngược bảng chữ cái (từ Z - A)"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo số phòng trống"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên nhiều phòng trống"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên ít phòng trống"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp xếp theo số lượng khách"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"/>
+            <RadioGroup
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên chứa được nhiều khách"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:text="Ưu tiên chứa được ít khách"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_radiobutton"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnApDungSX"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Áp dụng"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorXanhDen"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button"/>
+                <Button
+                    android:id="@+id/btnHuySX"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hủy bỏ"
+                    android:textColor="@color/colorXanhDen"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button_tracuu"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

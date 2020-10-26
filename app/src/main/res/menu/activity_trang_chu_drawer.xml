@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_qldp"
+            android:icon="@drawable/icon_qldp"
+            android:title="Quản lý đặt phòng" />
+        <item
+            android:id="@+id/nav_dg"
+            android:icon="@drawable/icon_dg"
+            android:title="Đánh giá" />
+        <item
+            android:id="@+id/nav_qlcn"
+            android:icon="@drawable/icon_qlcn"
+            android:title="Quản lý chỗ nghỉ" />
+        <item
+            android:id="@+id/nav_cd"
+            android:icon="@drawable/icon_cd"
+            android:title="Cài đặt" />
+        <item
+            android:id="@+id/nav_dx"
+            android:icon="@drawable/icon_dx"
+            android:title="Đăng xuất" />
+    </group>
+
+</menu>

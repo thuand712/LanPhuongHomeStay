@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorblack">#37393D</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorred">#F24333</color>
+    <color name="colorToolbar">#F5FFF9</color>
+    <color name="colorXanhDen">#2A8550</color>
+    <color name="colorDanhGia">#54B57D</color>
+    <color name="colorGray">#7A7B7C</color>
+    <color name="colorXanhDen1">#0F4E29</color>
+    <color name="colorMauNen">#FBFAF8</color>
+    <color name="colorMauNenTag">#FFFFFF</color>
+
+</resources>

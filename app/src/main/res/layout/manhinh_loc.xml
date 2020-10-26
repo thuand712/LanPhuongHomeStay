@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt phòng nhanh"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:text="Chỉ hiển thị những homestay cho phép đặt phòng nhanh"
+                android:textSize="12sp"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá phòng/đêm"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.000 - 100.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.000 - 200.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200.000 - 500.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500.000 - 1.000.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.000.000 - 2.000.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.000.000 - 5.000.000 VNĐ"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá của khách"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_checkbox_loc"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:progressDrawable="@drawable/custom_ratingbar"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_checkbox_loc"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:rating="4"
+                    android:progressDrawable="@drawable/custom_ratingbar"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_checkbox_loc"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:progressDrawable="@drawable/custom_ratingbar"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/custom_checkbox_text"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/custom_checkbox_loc"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:rating="2"
+                    android:progressDrawable="@drawable/custom_ratingbar"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị phòng trống"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:text="Chỉ hiển thị những homestay còn phòng trống"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số phòng trống"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 - 5 phòng"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 - 10 phòng"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 - 20 phòng"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số khách có thể ở"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 - 2 người lớn"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 - 5 người lớn"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 - 10 người lớn"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 - 20 người lớn"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 - 50 người lớn"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiện ích tại homestay"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miễn phí wifi"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Có bãi đỗ xe"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng tắm riêng"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Có phòng đôi"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cho phép thú cưng"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+            <CheckBox
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gần trung tâm thành phố"
+                android:textColor="@drawable/custom_checkbox_text"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/custom_checkbox_loc"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnApDung"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Áp dụng"
+                    android:textColor="@color/colorXanhDen"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button"/>
+                <Button
+                    android:id="@+id/btnBoLoc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bỏ lọc"
+                    android:textColor="@color/colorXanhDen"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button_tracuu" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

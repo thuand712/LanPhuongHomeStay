@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.ThanhToanMomoActivity"
+    android:padding="10dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarThanhToanMomo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán Momo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorXanhDen"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán bằng Momo"
+                android:textColor="#0F4E29"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/momopay"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/qr_zalo"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin giao dịch"
+                android:textColor="#0F4E29"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Người nhận:"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Công ty TNHH TripleT"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Mã giao dịch:"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="191213_611_1576218285885_2AUAK4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Số tiền:"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="1.877.500 VNĐ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Nội dung
+giao dịch:"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="TripleT - Thanh toán đơn đặt phòng số 123456789 cho Lan Phương Homestay"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Giao dịch kết thúc sau:"
+                    android:textColor="@color/colorblack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="15"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorblack"
+                    android:background="#E0FFED"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=":"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorblack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="00"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorblack"
+                    android:background="#E0FFED"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="Hủy giao dịch"
+                    android:drawableLeft="@drawable/icon_error"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorred"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

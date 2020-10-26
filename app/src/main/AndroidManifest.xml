@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nguyenthitam.com.lanphuonghomestay">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.HuyPhongActivity"></activity>
+        <activity android:name=".View.VietDanhGiaPhongActivity" />
+        <activity android:name=".View.VietDanhGiaActivity" />
+        <activity android:name=".View.ChiTietDanhGiaActivity" />
+        <activity android:name=".View.ChiTietDatPhongActivity" />
+        <activity android:name=".View.ThongTinChuyenDiActivity" />
+        <activity
+            android:name=".View.TrangChuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.XemTatCaHinhActivity" />
+        <activity android:name=".View.ChiDuongActivity" />
+        <activity android:name=".View.XacNhanThanhToanActivity" />
+        <activity android:name=".View.ThanhToanThanhCongActivity" />
+        <activity android:name=".View.ThanhToanMomoActivity" />
+        <activity android:name=".View.ThanhToanZaloPayActivity" />
+        <activity android:name=".View.ThanhToanChuyenKhoanActivity" />
+        <activity android:name=".View.ThanhToanTheTinDungActivity" />
+        <activity android:name=".View.ThanhToanActivity" />
+        <activity android:name=".View.ThongTinDatPhongActivity" />
+        <activity android:name=".View.ChonPhongActivity" />
+        <activity android:name=".View.MainActivity" />
+        <activity android:name=".View.QuanLyDatPhongActivity" />
+        <activity android:name=".View.DanhGiaActivity" />
+        <activity android:name=".TestActivity.TestActivity">
+
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

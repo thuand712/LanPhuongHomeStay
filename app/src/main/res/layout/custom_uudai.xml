@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHinhUuDai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/txtTieuDeUuDai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đà lạt đông sang"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/txtSaleUuDai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale off 20% ngày 24/12"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorwhite"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/txtTieuDeUuDai"/>
+
+</RelativeLayout>

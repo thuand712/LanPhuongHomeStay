@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TripleT</string>
+    <string name="title_activity_trang_chu">TrangChuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="dangnhap"><u>Đăng nhập </u></string>
+    <string name="dangky"><u>Đăng ký </u></string>
+    <string name="hp1"><b>1. </b>Nếu quý khách thực hiện hủy phòng trong vòng 48 giờ kể từ khi đặt phòng, quý khách sẽ được hoàn lại 100% số tiền (bao gồm cả các khoản phí kèm theo). Áp dụng cho các trường hợp quý khách đặt phòng trước 4 ngày so với ngày nhận phòng.</string>
+    <string name="hp2"><b>2. </b>Nếu quý khách thực hiện hủy phòng vào ngày trước ngày nhận phòng, quý khách sẽ được hoàn lại 50% số tiền (không bao gồm phí đêm đầu tiên và các khoản phí kèm theo).</string>
+    <string name="hp3"><b>3. </b>Nếu quý khách thực hiện hủy phòng vào ngày nhận phòng, quý khách sẽ không được hoàn lại tiền.</string>
+</resources>

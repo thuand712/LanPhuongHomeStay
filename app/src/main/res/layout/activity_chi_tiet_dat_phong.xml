@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.ChiTietDatPhongActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:text="Chi tiết đặt phòng"
+            android:textColor="@color/colorXanhDen"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"></androidx.viewpager.widget.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/dotslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/lanphong1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/lanphong3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/lanphuong4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imgXemTatCa"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/lanphuong5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Xem tất cả hình ảnh"
+                            android:textColor="#E0FFED"
+                            android:textSize="18sp"
+                            android:textStyle="bold|italic"
+
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lan Phương Homestay"
+                    android:textColor="@color/colorblack"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/hinh_rating"
+                   />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="90 Phạm Ngũ Lão, Phường 3, Tp. Đà Lạt, Tình Lâm Đồng, Đà lạt, Việt nam"
+                    android:textColor="@color/colorblack"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin đặt phòng của bạn"
+                        android:textColor="#0F4E29"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng quan"
+                        android:textColor="#0F4E29"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Người đặt"
+                            android:textColor="@color/colorblack"/>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anh"
+                                android:layout_marginRight="3dp"
+                                android:textColor="@color/colorblack"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Trần Nam"
+                                android:textColor="@color/colorblack"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Mã xác nhận"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Mã số PIN"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="123456789"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="123432"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Thông tin đặt phòng"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Chi phí"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="5 phòng, 1 đêm"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1.877.500 VNĐ"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày đặt: 22/11/2019"
+                            android:textStyle="italic"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Nhận phòng"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Trả phòng"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="14:00 - 15:00"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:00"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Thứ 6 - 22/11/2019"
+                            android:textColor="@color/colorblack"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Thứ 7 - 23/11/2019"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết đặt phòng"
+                        android:textColor="#0F4E29"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/imgHinhCTDP"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_dobong">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Super Deluxe L1"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Khách"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Nguyễn Văn Hoàng Hôn U Buồn"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Giá"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="375.500 VNĐ"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Trả trước"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Đã thanh toán trước 100%"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Yêu cầu đặc biệt"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Không có yêu cầu đặc biệt nào"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_dobong">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Super Deluxe L2"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Khách"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Nguyễn Văn Hoàng Hôn U Buồn"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Giá"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="375.500 VNĐ"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Trả trước"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Đã thanh toán trước 100%"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Yêu cầu đặc biệt"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Không có yêu cầu đặc biệt nào"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_dobong">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Super Deluxe L3"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Khách"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Nguyễn Văn Hoàng Hôn U Buồn"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Giá"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="375.500 VNĐ"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Trả trước"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Đã thanh toán trước 100%"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Yêu cầu đặc biệt"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Không có yêu cầu đặc biệt nào"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_dobong">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Super Deluxe L4"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Khách"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Nguyễn Văn Hoàng Hôn U Buồn"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Giá"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="375.500 VNĐ"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Trả trước"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Đã thanh toán trước 100%"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Yêu cầu đặc biệt"/>
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Không có yêu cầu đặc biệt nào"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnVietDGCTDP"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Viết đánh giá"
+                    android:textColor="@color/colorXanhDen"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_button"/>
+                <Button
+                    android:id="@+id/btnHuyDPCTDP"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hủy đặt chỗ nghỉ này"
+                    android:textColor="@color/colorXanhDen"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:background="@drawable/custom_button_tracuu"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
